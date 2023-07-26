@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form </title>
+    <link rel="shortcut icon" type="image/svg" href="./images/logo-icon.png">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500&family=Fira+Sans:wght@400;500&family=Inter:wght@500;600;700&family=Montserrat:ital,wght@0,300;0,400;0,500;1,400&family=Ubuntu:wght@400;500&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="row my-3 p-3 shadow-light">
+
+                <div class="col-md-6 border_black p-3" id="bgColor">
+                    <div class="d-flex overflow-auto justify-content-start justify-content-sm-center">
+                        <select id="colorSelect" class="form-select shadow-none w-auto me-2" aria-label="Select">
+                            <option selected>Change Color</option>
+                            <option value="grey">Grey</option>
+                            <option value="white">White</option>
+                            <option value="lightgray">lightgray</option>
+                            <option value="yellow">Yellow</option>
+                        </select>
+                        <button id="btnList" class="btn button_primary  me-2 fs-16 text-white fw-700">+List</button>
+                        <button id="btnGrid" class="btn button_primary me-2  fs-16 text-white fw-700">+Grid</button>
+                    </div>
+                    <div class="pe-md-3 pe-lg-5 my-3">
+                        <form action="" id="formList">
+                            <input type="email"
+                                class="form-control mb-3 text_black fs-18 py-2 shadow-none border-0 rounded-0 form_input"
+                                id="email" placeholder="Email*" required>
+                            <input type="password"
+                                class="form-control mb-3 text_black fs-18 py-2 shadow-none border-0 rounded-0 form_input"
+                                id="password" placeholder="Password*" required>
+                            <input type="text"
+                                class="form-control mb-3 text_black fs-18 py-2 shadow-none border-0 rounded-0 form_input"
+                                id="name" placeholder="Fullname*" required>
+                            <input type="password"
+                                class="form-control mb-3 text_black fs-18 py-2 shadow-none border-0 rounded-0 form_input"
+                                id="password" placeholder="Confirm Password*" required>
+                            <input type="date"
+                                class="form-control mb-3 text_black fs-18 py-2 shadow-none border-0 rounded-0 form_input"
+                                id="date" placeholder="Enter Date*" required>
+                            <input type="email"
+                                class="form-control mb-3 text_black fs-18 py-2 shadow-none border-0 rounded-0 form_input"
+                                id="email" placeholder="Email*" required>
+
+                            <div class="text-center">
+                                <button class="button_primary border-0 shadow-none p-2 text-white fw-700"
+                                    type="submit">submit</button>
+                            </div>
+
+                        </form>
+                        <form action="" style="display: none;" id="formGrid">
+                            <div class="d-flex gap-4">
+                                <input type="email"
+                                    class="form-control mb-3 text_black fs-18 py-2 shadow-none border-0 rounded-0 form_input"
+                                    id="email" placeholder="Email*" required>
+                                <input type="password"
+                                    class="form-control mb-3 text_black fs-18 py-2 shadow-none border-0 rounded-0 form_input"
+                                    id="password" placeholder="Password*" required>
+                            </div>
+                            <div class="d-flex gap-4">
+                                <input type="text"
+                                    class="form-control mb-3 text_black fs-18 py-2 shadow-none border-0 rounded-0 form_input"
+                                    id="name" placeholder="Fullname*" required>
+                                <input type="password"
+                                    class="form-control mb-3 text_black fs-18 py-2 shadow-none border-0 rounded-0 form_input"
+                                    id="password" placeholder="Confirm Password*" required>
+                            </div>
+                            <div class="d-flex gap-4">
+                                <input type="date"
+                                    class="form-control mb-3 text_black fs-18 py-2 shadow-none border-0 rounded-0 form_input"
+                                    id="date" placeholder="Enter Date*" required>
+                                <input type="email"
+                                    class="form-control mb-3 text_black fs-18 py-2 shadow-none border-0 rounded-0 form_input"
+                                    id="email" placeholder="Email*" required>
+                            </div>
+                            <div class="text-center">
+                                <button class="button_primary border-0 shadow-none p-2 text-white fw-700"
+                                    type="submit">submit</button>
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+                <div class="col-md-6 border_black p-3">
+                    <img src="images/passport.jpg" class="img-fluid w-100" alt="Passport" title="Passport">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
